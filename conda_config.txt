@@ -1,0 +1,31 @@
+#########################################################
+UTILIZACIÓN DE CONDA EN EL PROYECTO
+#########################################################
+
+1er metodo:
+---------------------------------------------------------
+
+> crear un environment.yml:
+
+name: myenv
+channels:
+  - defaults
+dependencies:
+  - python=3.9
+  - fastapi
+  - uvicorn
+  - sqlalchemy
+  - python-dotenv
+  - pydantic
+
+
+> una vez hecho lo anterior ejecutar :: conda env create -f environment.yml
+  
+
+2do metodo:
+----------------------------------------------------------
+
+1 - conda create --name my_conda
+  - conda activate my_conda  (conda deactivate)
+2 - conda install ...todos los paquetes necesarios
+3 - conda list --export > environment.yml

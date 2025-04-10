@@ -1,0 +1,7 @@
+para ejecutar un modulo como tal, utlizar:
+
+py o python o python3 -m modulo.archivo
+
+ej: py -m database.database para ejcutar /database/database.py
+
+lo anterior es util, cuando no se reconoce una carpeta como modulo
